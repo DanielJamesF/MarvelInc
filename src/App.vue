@@ -7,8 +7,18 @@
     <router-link to="/admin">Admin</router-link>
   </nav>
   <router-view/>
+  <footer-all/>
 </template>
+<script>
+import FooterAll from '@/components/FooterAll.vue';
 
+export default {
+  name: "myApp", // Renaming the app so it won't conflict with the child component
+  components: {
+    FooterAll
+}
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
