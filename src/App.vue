@@ -1,21 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/products">Products</router-link> |
-    <router-link to="/contact">Contact</router-link> |
-    <router-link to="/admin">Admin</router-link>
-  </nav>
+  <Navbar />
   <router-view/>
   <footer-all/>
 </template>
 <script>
 import FooterAll from '@/components/FooterAll.vue';
+import Navbar from './components/Navbar.vue'
 
 export default {
   name: "myApp", // Renaming the app so it won't conflict with the child component
   components: {
-    FooterAll
+    FooterAll,
+    Navbar
 }
 }
 </script>
@@ -30,6 +26,10 @@ export default {
 
 nav {
   padding: 30px;
+}
+body{
+  background-color: #F8002F;
+background-image: linear-gradient(326deg, #F8002F 0%, #000C14 74%);
 }
 
 nav a {

@@ -1,5 +1,5 @@
 {
-    "items": [{
+    "products": [{
             "id": 0,
             "title": "Sheild of Captain America",
             "img": "https://i.postimg.cc/zfQ6VNWY/captain-america.jpg",
@@ -220,5 +220,8 @@
             "power": "10",
             "used-by": "Doctor Steven Strange"
         }
-    ]
+    ],
+    "Users" [{
+        ""
+    }]
 }

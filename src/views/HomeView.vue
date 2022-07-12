@@ -55,8 +55,8 @@ html, body {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	height: auto;
-	width: auto;
+	height: 100vh;
+	width: 100vw;
 	z-index: -1;
 	transform: translateX(-50%) translateY(-50%);
 	min-width: 100%;
