@@ -1,12 +1,19 @@
 <template>
-   <div class="container p-5">
-    <div class="row">
-        <div class="col">
-            <h1 class="display-3">ABOUT US</h1>
-            <h3 class="display-6">Meet The Team</h3>
-            <img src="" alt="">
+   <div class="container py-2">
+        <div class="row">
+            <div class="col">
+            <h1 class="display-4 text-white">ABOUT US</h1>
+            </div>
         </div>
-    </div>
+            <div class="row p-2">
+                <div class="col-md-4 col-xm-12">
+                    <img src="https://i.postimg.cc/T2j1k3Gk/logo.png" alt="logo">
+                </div>
+                <div class="col-md-8 col-xm-12 mt-5 text-white">
+                    <p class="h5"> Marvel Inc was founded all the way back in 2022 in Cape Town, South Africa by 4 average youngsters who showed that big ideals start small and in unlikely places. The founding members came up with the idea while they were enrolled in a brilliant and successful coding academy by the name of Lifechoices based in Lansdowne. After they graduated came together and started a website to sell the items that they gathered around the galaxy. They were so successful that they replaced the Guardians of the Galaxy forcing them to go out of business </p>
+                </div>
+            </div>
+                <h3 class="display-6 text-white">Meet The Team</h3>
         <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
             <div class="col">
                 <div class="card h-100 shadow-sm">
@@ -14,7 +21,7 @@
            
 
                         <div class="img-hover-zoom img-hover-zoom--colorize">
-                            <img class="shadow" src="https://source.unsplash.com/rDEOVtE7vOs/600x600"
+                            <img class="shadow" src="https://i.postimg.cc/pTkRxgpj/Super.jpg"
                                 alt="Another Image zoom-on-hover effect">
                         </div>
 
@@ -31,21 +38,21 @@
 
                         <div class="my-2 text-center">
 
-                            <h1>Mia Wallace</h1>
+                            <h1>Taucia Jackson</h1>
 
                         </div>
                         <div class="mb-3">
 
-                            <h2 class="text-uppercase text-center role">Senior Frontend Developer</h2>
+                            <h2 class="text-uppercase text-center role">Team Leader</h2>
 
                         </div>
                         <div class="box">
                             <div>
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-instagram"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-linkedin-in text-primary"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-instagram text-danger"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-twitter text-primary"></i></li>
                                 </ul>
 
                             </div>
@@ -61,7 +68,7 @@
                
 
                         <div class="img-hover-zoom img-hover-zoom--colorize">
-                            <img class="shadow" src="https://source.unsplash.com/XHVpWcr5grQ/600x600"
+                            <img class="shadow" src="https://i.postimg.cc/y6GZB9md/LS2.jpg"
                                 alt="Another Image zoom-on-hover effect">
                         </div>
 
@@ -78,21 +85,21 @@
 
                         <div class="my-2 text-center">
 
-                            <h1>Vincent Vega</h1>
+                            <h1>Mr Jankowski</h1>
 
                         </div>
                         <div class="mb-3">
 
-                            <h2 class="text-uppercase text-center role">SEO Specialist</h2>
+                            <h2 class="text-uppercase text-center role">Content Manager</h2>
 
                         </div>
                         <div class="box">
                             <div>
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-instagram"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-linkedin-in text-primary"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-instagram text-danger"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-twitter text-primary"></i></li>
                                 </ul>
 
                             </div>
@@ -108,7 +115,7 @@
                  
 
                         <div class="img-hover-zoom img-hover-zoom--colorize">
-                            <img class="shadow" src="https://source.unsplash.com/n4KewLKFOZw/600x600"
+                            <img class="shadow" src="https://i.postimg.cc/7hpvYX9w/Emile.jpg"
                                 alt="Another Image zoom-on-hover effect">
                         </div>
 
@@ -124,21 +131,21 @@
 
                         <div class="my-2 text-center">
 
-                            <h1>Mr. Wolf</h1>
+                            <h1>Emile Van Wyk</h1>
 
                         </div>
                         <div class="mb-3">
 
-                            <h2 class="text-uppercase text-center role">DIGITAL MARKETING SPECIALIST</h2>
+                            <h2 class="text-uppercase text-center role">FrontEnd Developer</h2>
 
                         </div>
                         <div class="box">
                             <div>
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-instagram"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-linkedin-in text-primary"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-instagram text-danger"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-twitter text-primary"></i></li>
                                 </ul>
 
                             </div>
@@ -154,7 +161,7 @@
                    
 
                         <div class="img-hover-zoom img-hover-zoom--colorize">
-                            <img class="shadow" src="https://source.unsplash.com/B4TjXnI0Y2c/600x600"
+                            <img class="shadow" src="https://i.postimg.cc/W1tv6FDB/Daniel.jpg"
                                 alt="Another Image zoom-on-hover effect">
                         </div>
 
@@ -169,21 +176,21 @@
 
                         <div class="my-2 text-center">
 
-                            <h1>O-Ren Ishii</h1>
+                            <h1>Daniel Fredricks</h1>
 
                         </div>
                         <div class="mb-3">
 
-                            <h2 class="text-uppercase text-center role">Web Developer</h2>
+                            <h2 class="text-uppercase text-center role">BackEnd Developer</h2>
 
                         </div>
                         <div class="box">
                             <div>
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-instagram"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-linkedin-in text-primary"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-instagram text-danger"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-twitter text-primary"></i></li>
                                 </ul>
 
                             </div>
@@ -208,6 +215,17 @@ export default {
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 :root {
     --font3: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f8002f;
+background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);;
+}
+
+
+
+.text-aqua{
+    color: aqua;
 }
 
 .h1,
@@ -265,7 +283,7 @@ h1 {
 
 .fab {
     font-size: 1.5rem;
-    color: darkgray;
+    color: black;
     transition: transform .5s;
 }
 
