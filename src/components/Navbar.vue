@@ -55,7 +55,5 @@ nav a {
 nav a.router-link-exact-active {
   color: #b5242d;
 }
-nav:hoover{
-    color: #b5242d;
-}
+
 </style>
