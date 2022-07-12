@@ -9,18 +9,7 @@
         <a class="navbar-brand" href="#"><i class="bi bi-house-fill me-2"></i><router-link to="/">Home</router-link></a>
         <a class="navbar-brand" href="#"><i class="bi bi-bag-plus-fill"></i>Add Item</a>
       </nav>
-
     </div>
-
-    <ul class="d-flex flex-row justify-content-end">
-      <li>
-        <a class="navbar-brand" href="#"><i class="bi bi-trash-fill"></i>Remove Item</a>
-        <a class="navbar-brand" href="#"><i class="bi bi-pencil-fill"></i>Edit Item</a>
-      </li>
-    </ul>
-
- 
-
   <div class="container table-responsive py-5 text-white">
     <table class="table table-bordered table-hover text-white">
       <thead class="thead-dark text-white">
@@ -33,6 +22,7 @@
           <th scope="col">price</th>
           <th scope="col">power</th>
           <th scope="col">used-by</th>
+          <th scope="col">actions</th>
         </tr>
       </thead>
 
@@ -45,7 +35,11 @@
           <td>{{ product.category }}</td>
           <td>{{ product.price }}</td>
           <td>{{ product.power }}</td>
-          <td>{{ product.used-by }}</td>
+          <td>{{ product.usedBy }}</td>
+                    <td>
+        <a class="navbar-brand" href="#"><i class="bi bi-trash-fill"></i>Remove Item</a>
+        <a class="navbar-brand" href="#"><i class="bi bi-pencil-fill"></i>Edit Item</a>
+      </td>
         </tr>
       </tbody>
     </table>
