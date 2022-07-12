@@ -1,18 +1,25 @@
 <template>
-        
+    <div id="app">
+        <product-list></product-list>
+    </div>
 </template>
-    
+
 <script>
-    import Cards from '@/components/Cards.vue'
+import Cards from '../components/Cards.vue';
 
 export default {
-  name: 'HomeView',
-  components: {
-    Cards
-  }
+components: {
+    'product-list': Cards
+},
+name: 'app',
+    data() {
+        return {
+
+        }
+    },
 }
 </script>
-    
-<style>
-    
+
+<style scoped>
+
 </style>
