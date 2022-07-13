@@ -1,16 +1,19 @@
 <template>
    <div class="container py-2">
         <div class="row">
-            <div class="col">
-            <h1 class="display-4 text-white">ABOUT US</h1>
-            </div>
+            <div class="col-md-12 py-5">
+      <div class="site-heading text-center">
+        <h2 class="text-white">About <span>Us</span></h2>
+        <h4></h4>
+      </div>
+    </div>
         </div>
             <div class="row p-2">
                 <div class="col-md-4 col-xm-12">
                     <img src="https://i.postimg.cc/T2j1k3Gk/logo.png" alt="logo">
                 </div>
                 <div class="col-md-8 col-xm-12 mt-5 text-white">
-                    <p class="h5"> Marvel Inc was founded all the way back in 2022 in Cape Town, South Africa by 4 average youngsters who showed that big ideals start small and in unlikely places. The founding members came up with the idea while they were enrolled in a brilliant and successful coding academy by the name of Lifechoices based in Lansdowne. After they graduated came together and started a website to sell the items that they gathered around the galaxy. They were so successful that they replaced the Guardians of the Galaxy forcing them to go out of business </p>
+                    <p class="h5"> Marvel Inc was founded all the way back in 2022 in Cape Town, South Africa by 4 average youngsters who showed that big ideas start small and in unlikely places. The founding members came up with the idea while they were enrolled in a brilliant and successful coding academy by the name of Life Choices based in Lansdowne. After they graduated, they came together and started a website to sell the items that they gathered around the galaxy. They were so successful that they replaced the Guardians of the Galaxy forcing them to go out of business </p>
                 </div>
             </div>
                 <h3 class="display-6 text-white">Meet The Team</h3>
@@ -211,6 +214,7 @@ export default {
 </script>
 
 <style>
+@import url("../assets/main.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 :root {
@@ -311,4 +315,51 @@ h1 {
         font-size: 2rem;
     }
 }
+/* for headers */
+section {
+    padding: 60px 0;
+    min-height: 100vh;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}.bg-gray {
+    background-color: #f9f9f9;
+}
+
+.site-heading h2 {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.site-heading h2 span {
+  color: #a00000;
+}
+
+.site-heading h4 {
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+.site-heading h4::before {
+  background: #a00000 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
+
 </style>
