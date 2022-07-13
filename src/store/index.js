@@ -7,6 +7,9 @@ export default createStore({
         user: null,
     },
     getters: {
+
+    },
+    mutations: {
         setUser: (state, user) => {
             state.user = user;
         },
@@ -17,23 +20,22 @@ export default createStore({
             state.product = product;
         }
     },
-    mutations: {
+    actions: {
         getProducts: async(context) => {
             fetch(`http://localhost:3000/products`)
                 .then((res) => res.json())
                 .then((products) => context.commit("setProducts", products))
         },
         getProduct: async(context, id) => {
-            fetch(`http://localhost:3000/products/` + id)
+            fetch(`http://localhost:3000/products/${id}`)
                 .then((res) => res.json())
                 .then((product) => context.commit("setProduct", product))
         },
         getUser: async(context, id) => {
-            fetch(`http://localhost:3000/users` + id)
+            fetch(`http://localhost:3000/users/${id}`)
                 .then((res) => res.json())
                 .then((user) => context.commit("setUser", user))
-        },
+        }
     },
-    actions: {},
     modules: {}
 })

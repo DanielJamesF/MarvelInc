@@ -6,7 +6,7 @@
                         <h4></h4>
                     </div>
                 </div>
-        <product-list></product-list>
+        <product-card v-for="product in products" :key="product.id" />
     </div>
 </template>
 
@@ -15,14 +15,16 @@ import Cards from '../components/Cards.vue';
 
 export default {
 components: {
-    'product-list': Cards
+    'product-card': Cards
 },
-name: 'app',
-    data() {
-        return {
-
-        }
+computed: {
+    products() {
+      return this.$store.state.products;
     },
+mounted(){
+    this.$store.dispatch("getProducts");
+}
+}
 }
 </script>
 

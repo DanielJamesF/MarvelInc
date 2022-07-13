@@ -30,7 +30,7 @@
     style="position: relative"
   >
     <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-      <div class="col hp" v-for="product in products" :key="product.id">
+      <div class="col hp">
         <div class="card h-100 shadow-sm" > 
           <a href="#">
             <img
@@ -51,7 +51,7 @@
 
               <span class="float-end"
                 ><a href="#" class="small text-muted text-uppercase aff-link btn"
-                  >View</a
+                  ><router-link :to="{name: 'product', params: {id: product.id}}">view product</router-link></a
                 ></span
               >
             </div>
@@ -82,11 +82,7 @@
 
 <script>
 export default {
-  computed: {
-    products() {
-      return this.$store.state.products;
-    },
-  },
+props: ["product"]
 };
 </script>
 
