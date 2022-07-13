@@ -1,6 +1,11 @@
 <template>
   <div class="container text-white">
-    <h2 class="display-4">Contact Page</h2>
+   <div class="col-md-12 py-5">
+      <div class="site-heading text-center">
+        <h2>Contact<span> Us</span></h2>
+        <h4></h4>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-6 col-xm-12">
         <img src="https://i.postimg.cc/T2j1k3Gk/logo.png" alt="logo" />
@@ -8,7 +13,7 @@
           <a href=""><i class="bi bi-instagram text-danger mx-1 "></i></a>
           <a href=""><i class="bi bi-facebook text-primary mx-1 "></i></a>
           <a href=""><i class="bi bi-tiktok text-dark mx-1 "></i></a>
-          <a href=""><i class="bi bi-twitter text-primary2 mx-1  "></i></a>
+          <a href=""><i class="bi bi-twitter text-primary2 mx-1 "></i></a>
         </div>
       </div>
       <div class="col-md-5 col-xl-5 col-xm-12">
@@ -36,7 +41,7 @@
             type="email"
             name="_replyto"
             id="_replyto"
-            placeholder="subject"
+            placeholder="Subject"
             required
           />
           <label for="message"> Message </label>
@@ -61,12 +66,14 @@ export default {};
 <style>
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; 
   box-sizing: border-box;
 }
 body {
   background-color: #f8002f;
-  background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);
+  background-image: url(https://i.postimg.cc/T1G8LcVz/4715483.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* Font: Montserrat 300;400;700
    Color: light blue #d3e2f6
@@ -79,7 +86,7 @@ body {
 }
 
 body {
-  padding: 5%;
+
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
 }
@@ -140,5 +147,38 @@ form button:hover {
 
 .text {
   margin-left: 1rem;
+}.site-heading h2 {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
+.site-heading h2 span {
+  color: #A00000;
+}
+.site-heading h4 {
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+.site-heading h4::before {
+  background: #A00000 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
+
+
+
+
+
+
+
+
 </style>
