@@ -1,21 +1,30 @@
 <template>
-  <div class="container text-white register">
-                    <div class="site-heading text-center">
-                        <h2>Create <span>Account</span></h2>
-                        <h4>Lorem Ipsum is simply dummy text</h4>
-                    </div>
+  <div class="container-fluid text-white register">
     <div class="row">
       <div class="col-md-6 col-xm-12">
-        <img src="https://i.postimg.cc/T2j1k3Gk/logo.png" alt="logo" />
       </div>
       <div class="col-md-5 col-xl-5 col-xm-12">
         <form>
-          <label for="_name"> Your Name </label>
+          <div class="site-heading text-center my-5">
+            <h2>Create <span>Account</span></h2>
+            <h4>Register account to have access to admin panel</h4>
+          </div>
+          <label for="_name"> Your Firstname </label>
+          <input
+            type="text"
+            name="_firstname"
+            id="_firstname"
+            v-model="firstname"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="_name"> Your Surname </label>
           <input
             type="text"
             name="_name"
-            id="_name"
-            placeholder="Name"
+            id="_firstname"
+            v-model="surname"
+            placeholder="Enter your surname"
             required
           />
           <label for="_replyto"> Your Email </label>
@@ -23,18 +32,20 @@
             type="email"
             name="_replyto"
             id="_replyto"
-            placeholder="Email"
+            v-model="email"
+            placeholder="@gmail.com"
             required
           />
           <label for="_name"> Your password </label>
           <input
             type="password"
             name="_password"
-            id="_passwrod"
-            placeholder="enter password"
+            id="_password"
+            v-model="password"
+            placeholder="Enter your password"
             required
           />
-<!-- 
+          <!-- 
           <label for="_replyto"> Subject </label>
           <input
             type="email"
@@ -52,7 +63,29 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    users() {
+      return this.$store.state.users;
+    },
+  },
+  data() {
+    return {
+      firstname: "",
+      surname: "",
+      email: "",
+      password: "",
+    };
+  },
+  methods: {
+    login() {
+      this.$store.dispatch("login", {
+        email: this.email,
+        password: this.password,
+      });
+    },
+  },
+};
 </script>
 
 <style>
@@ -74,9 +107,10 @@ body {
 .text-primary2 {
   color: aqua;
 }
-.register{
-    width: 100vw;
-    height: 100vh;
+.register {
+    background:url(https://wallpapercave.com/wp/wp4689852.png);
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
@@ -112,7 +146,7 @@ form label {
 
 form button {
   background-color: #000000;
-  color: rgb(255, 255, 255) ;
+  color: rgb(255, 255, 255);
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -121,8 +155,6 @@ form button {
   margin: 0.5rem 0rem;
   border-radius: 10px;
 }
- 
-
 
 form button:hover {
   background-color: #ffffff;

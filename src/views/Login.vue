@@ -1,15 +1,15 @@
 <template>
-  <div class="container text-white login">
+  <div class="container-fluid text-white login">
     <div class="row">
-      <div class="col-md-6 col-xm-12">
-        <img src="https://i.postimg.cc/T2j1k3Gk/logo.png" alt="logo" />
+      <div class="col-md-5 col-xm-12">
+
       </div>
-      <div class="col-md-5 col-xl-5 col-xm-12">
-                          <div class="site-heading text-center my-2">
-                        <h2>login to <span>Account</span></h2>
-                        <h4></h4>
-                    </div>
+      <div class="col-md-7 col-xl-5 col-xm-12">
         <form @submit.prevent="login">
+          <div class="site-heading text-center my-5">
+            <h2>login to <span>Account</span></h2>
+            <h4></h4>
+          </div>
           <label for="_replyto"> Your Email </label>
           <input
             type="email"
@@ -28,14 +28,15 @@
             v-model="password"
             required
           />
-        <div v-if="users">
-          <p class="lead">Welcome {{users[0].firstname}} {{users[0].surname}} 
-          to our app
-          </p>
-        </div>
-        <div v-else>
-          <router-link to="/register" >Please register</router-link>
-        </div>
+          <div v-if="users">
+            <p class="lead">
+              Welcome {{ users[0].firstname }} {{ users[0].surname }}
+              to our app
+            </p>
+          </div>
+          <div v-else>
+            <router-link to="/register">Please register</router-link>
+          </div>
           <button type="submit" class="button">SUBMIT</button>
         </form>
       </div>
@@ -47,30 +48,24 @@
 export default {
   computed: {
     users() {
-      return this.$store.state.users
+      return this.$store.state.users;
     },
-    error() {
-      return this.$store.state.error
-    },
-    JTProfile() {
-      return this.$store.state.users.profile
-    }
   },
   data() {
     return {
-      email: '',
-      password: ''
-    }
+      email: "",
+      password: "",
+    };
   },
   methods: {
     login() {
-      this.$store.dispatch('login', {
+      this.$store.dispatch("login", {
         email: this.email,
-        password: this.password
-      })
-    }
-  }
-}
+        password: this.password,
+      });
+    },
+  },
+};
 </script>
 
 <style>
@@ -98,9 +93,10 @@ body {
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
 }
-.login{
-    width: 100vw;
-    height: 100vh;
+.login {
+  background:url(https://wallpapercave.com/wp/wp4689816.jpg);
+  width: 100vw;
+  height: 100vh;
 }
 
 form input,
@@ -130,7 +126,7 @@ form label {
 
 form button {
   background-color: #000000;
-  color: rgb(255, 255, 255) ;
+  color: rgb(255, 255, 255);
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -139,8 +135,6 @@ form button {
   margin: 0.5rem 0rem;
   border-radius: 10px;
 }
- 
-
 
 form button:hover {
   background-color: #ffffff;
