@@ -221,7 +221,11 @@
             "used-by": "Doctor Steven Strange"
         }
     ],
-    "Users" [{
-        ""
+    "users": [{
+        "id": 0,
+        "firstname": "Emile",
+        "lastname": "Van Wyk",
+        "email": "emile@gmail.com",
+        "password": "pass"
     }]
 }

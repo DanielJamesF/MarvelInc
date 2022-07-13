@@ -22,8 +22,8 @@
         <li class="nav-item dropdown rounded">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-fill me-2"></i></a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Login</a></li>
-            <li><a class="dropdown-item" href="#">Create Account</a></li>
+            <li><a class="dropdown-item" href="#"><router-link to="/login">Login</router-link></a></li>
+            <li><a class="dropdown-item" href="#"><router-link to="/register">Register</router-link></a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
@@ -43,16 +43,21 @@ export default {
 </script>
 
 <style>
-    nav {
+
+nav {
   padding: 30px;
+}
+body{
+  background-color: #F8002F;
+background-image: linear-gradient(326deg, #F8002F 0%, #000C14 74%);
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #905656;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #a70000;
 }
 </style>

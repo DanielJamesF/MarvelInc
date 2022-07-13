@@ -24,20 +24,4 @@ export default {
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-body{
-  background-color: #F8002F;
-background-image: linear-gradient(326deg, #F8002F 0%, #000C14 74%);
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

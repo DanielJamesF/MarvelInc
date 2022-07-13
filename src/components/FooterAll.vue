@@ -37,7 +37,7 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                                <a href="index.html"><img src="https://i.postimg.cc/T2j1k3Gk/logo.png" class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text">
                                 <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
@@ -59,7 +59,7 @@
                             <ul>
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
+                                <li><a href="#">products</a></li>
                                 <li><a href="#">portfolio</a></li>
                                 <li><a href="#">Contact</a></li>
                                 <li><a href="#">About us</a></li>
@@ -94,7 +94,7 @@
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                            <p>Copyright &copy; 2022, All Right Reserved <a href="#">MARVEL INC</a></p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
@@ -131,7 +131,7 @@ export default {
   border-bottom: 1px solid #373636;
 }
 .single-cta i {
-  color: #ff5e14;
+  color: #a00000;
   font-size: 30px;
   float: left;
   margin-top: 8px;
@@ -201,7 +201,7 @@ export default {
   background: #55ACEE;
 }
 .google-bg{
-  background: #DD4B39;
+  background: #a00000;
 }
 .footer-widget-heading h3 {
   color: #fff;
@@ -217,7 +217,7 @@ export default {
   bottom: -15px;
   height: 2px;
   width: 50px;
-  background: #ff5e14;
+  background: #a00000;
 }
 .footer-widget ul li {
   display: inline-block;
@@ -226,7 +226,7 @@ export default {
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-  color: #ff5e14;
+  color: #a00000;
 }
 .footer-widget ul li a {
   color: #878787;
@@ -246,9 +246,9 @@ export default {
 .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #ff5e14;
+    background: #a00000;
     padding: 13px 20px;
-    border: 1px solid #ff5e14;
+    border: 1px solid #a00000;
     top: 0;
 }
 .subscribe-form button i {
@@ -266,14 +266,14 @@ export default {
   color: #878787;
 }
 .copyright-text p a{
-  color: #ff5e14;
+  color: #a00000;
 }
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
 }
 .footer-menu li:hover a{
-  color: #ff5e14;
+  color: #a00000;
 }
 .footer-menu li a {
   font-size: 14px;
