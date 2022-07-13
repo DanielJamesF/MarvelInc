@@ -224,7 +224,7 @@
     "users": [{
         "id": 0,
         "firstname": "Emile",
-        "lastname": "Van Wyk",
+        "surnname": "Van Wyk",
         "email": "emile@gmail.com",
         "password": "pass"
     }]

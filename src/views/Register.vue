@@ -80,6 +80,8 @@ export default {
   methods: {
     login() {
       this.$store.dispatch("login", {
+        firstname: this.firstname,
+        surname: this.surname,
         email: this.email,
         password: this.password,
       });
