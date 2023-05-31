@@ -12,6 +12,7 @@
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "vue": "^3.2.13",
+    "vue-responsive-video-background-player": "^2.2.1",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.2"
   },

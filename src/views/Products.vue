@@ -1,35 +1,31 @@
 <template>
-<div id="app">
-    <div class="col-md-12 py-5">
-      <div class="site-heading text-center">
-        <h2>Browse <span>Our Wares</span></h2>
-        <h4></h4>
-      </div>
+    <div id="app">
+                            <div class="col-md-12 py-5">
+                    <div class="site-heading text-center">
+                        <h2>Browse <span>Our Wares</span></h2>
+                        <h4></h4>
+                    </div>
+                </div>
+        <product-card v-for="product in products" :key="product.id" />
     </div>
-<div v-if="products">
-    <ProductCard 
-    v-for="product in products" 
-    :key="product.id" 
-    :product="product"/>
-</div>
-<div v-else>Loading....</div>
-</div>
 </template>
 
 <script>
-import ProductCard from "../components/ProductCard.vue";
+import Cards from '../components/Cards.vue';
 
 export default {
-  mounted() {
-    return this.$store.dispatch("getProducts");
-  },
-  computed: {
+components: {
+    'product-card': Cards
+},
+computed: {
     products() {
-      return this.$store.state.products
+      return this.$store.state.products;
     },
-  },
-  components: {ProductCard}
-};
+mounted(){
+    this.$store.dispatch("getProducts");
+}
+}
+}
 </script>
 
 <style scoped>

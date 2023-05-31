@@ -1,14 +1,18 @@
 <template>
-  <Navbar/>
+  <Navbar />
   <router-view/>
+  <footer-all/>
 </template>
-<script> 
-import Navbar from "./components/NavBar.vue"
+<script>
+import FooterAll from '@/components/FooterAll.vue';
+import Navbar from './components/Navbar.vue'
+
 export default {
-  components : {
+  name: "myApp", // Renaming the app so it won't conflict with the child component
+  components: {
+    FooterAll,
     Navbar
-  }
-  
+}
 }
 </script>
 <style>

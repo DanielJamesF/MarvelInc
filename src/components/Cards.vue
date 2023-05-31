@@ -1,195 +1,134 @@
 <template>
-        <section class="section-products">
-  <router-link :to="{ name: 'product', params: {id: items.id} }" class="card">
-    <img :src="items.img_url" :alt="items.title">
-    {{ items.title }}
-  </router-link>
-						<div class="col-md-6 col-lg-4 col-xl-3">
-								<div id="product-1" v-for="items of items" :key="items.id" class="single-product">
-										<div class="part-1">
-                                        <span class="discount">15% off</span>
-                                        <span class="new">used by {{items.used_by}}</span>
-												<ul>
-														<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-														<li><a href="#"><i class="fas fa-heart"></i></a></li>
-														<li><a href="#"><i class="fas fa-plus"></i></a></li>
-														<li><a href="#"><i class="fas fa-expand"></i></a></li>
-												</ul>
-										</div>
-										<div class="part-2">
-												<h3 class="product-title">{{items.title}}</h3>
-												<h4 class="product-old-price">$79.99</h4>
-												<h4 class="product-price">${{items.price}}</h4>
-										</div>
-								</div>
-						</div>
-</section>
+  <!-- <div id="product-list">
+        <h1>Product List</h1>
+        <ul>
+            <li v-for="product in products" :key="product.id">
+                <span class="name">{{ product.title }}</span>
+                <img :src="product.img" alt=""> -->
+  <!-- <span class="price">{{ product.img }}</span> -->
+  <!-- </li>
+        </ul>
+    </div> -->
+  <!-- <div class='container-fluid' id="product-list">
+        <div class="row">
+            <div class="card mx-auto col-md-3 col-10 mt-5" v-for="product in products" :key="product.id">
+                <img :src="product.img" alt="">
+                <div class="card-body text-center mx-auto">
+                    <div class='cvp'>
+                        <h5 class="card-title font-weight-bold">{{ product.title }}</h5>
+                        <p class="card-text"><span class="price">${{ product.price }}</span></p>
+                        <a href="#" class="btn details px-auto">view details</a><br />
+                        <a href="#" class="btn cart px-auto">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+  <div
+    class="container-fluid bg-trasparent my-4 p-3"
+    style="position: relative"
+  >
+    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+      <div class="col hp">
+        <div class="card h-100 shadow-sm" > 
+          <a href="#">
+            <img
+              :src="product.img"
+              class="card-img-top"
+              alt="product.title"
+            />
+          </a>
+
+          <div class="label-top shadow-sm">
+            <h5 class="card-title font-weight-bold">{{ product.title }}</h5>
+          </div>
+          <div class="card-body">
+            <div class="clearfix mb-3">
+              <span class="float-start badge rounded-pill bg-success"
+                >${{ product.price }}</span
+              >
+
+              <span class="float-end"
+                ><a href="#" class="small text-muted text-uppercase aff-link btn"
+                  ><router-link :to="{name: 'product', params: {id: product.id}}">view product</router-link></a
+                ></span
+              >
+            </div>
+            <h5 class="card-title">
+              <a target="_blank" href="#"
+                >{{ product.desc }}</a
+              >
+            </h5>
+
+            <div class="d-grid gap-2 my-4">
+              <a href="#" class="btn btn-warning bold-btn">add to cart</a>
+            </div>
+            <div class="clearfix mb-1">
+              <span class="float-start"
+                ><a href="#"><i class="fas fa-question-circle"></i></a
+              ></span>
+
+              <span class="float-end">
+                <i class="far fa-heart" style="cursor: pointer"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
-    
+
 <script>
-    
+export default {
+props: ["product"]
+};
 </script>
-    
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-body {
-    font-family: "Poppins", sans-serif;
-    color: #444444;
+<style scoped>
+/* body {
+  background: #e0e0e0;
+}
+.details {
+  border: 1.5px solid grey;
+  color: #212121;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 10px #212121;
 }
 
-a,
-a:hover {
-    text-decoration: none;
-    color: inherit;
+.cart {
+  background-color: #212121;
+  color: white;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 900;
+  width: 100%;
+  height: 39px;
+  padding-top: 9px;
+  box-shadow: 0px 5px 10px #212121;
 }
 
-.section-products {
-    padding: 80px 0 54px;
+.card {
+  width: fit-content;
 }
 
-.section-products .header {
-    margin-bottom: 50px;
+.card-body {
+  width: fit-content;
 }
 
-.section-products .header h3 {
-    font-size: 1rem;
-    color: #fe302f;
-    font-weight: 500;
+.btn {
+  border-radius: 0;
 }
 
-.section-products .header h2 {
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: #444444; 
-}
+/* .img-thumbnail {
+            border: none;
+        } */
 
-.section-products .single-product {
-    margin-bottom: 26px;
-}
-
-.section-products .single-product .part-1 {
-    position: relative;
-    height: 290px;
-    max-height: 290px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.section-products .single-product .part-1::before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		transition: all 0.3s;
-}
-
-.section-products .single-product:hover .part-1::before {
-		transform: scale(1.2,1.2) rotate(5deg);
-}
-
-.section-products #product-1 .part-1::before {
-    background: url("https://i.ibb.co/L8Nrb7p/1.jpg") no-repeat center;
-    background-size: cover;
-		transition: all 0.3s;
-}
-
-.section-products #product-2 .part-1::before {
-    background: url("https://i.ibb.co/cLnZjnS/2.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.section-products #product-3 .part-1::before {
-    background: url("https://i.ibb.co/L8Nrb7p/1.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.section-products #product-4 .part-1::before {
-    background: url("https://i.ibb.co/cLnZjnS/2.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.section-products .single-product .part-1 .discount,
-.section-products .single-product .part-1 .new {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    color: #ffffff;
-    background-color: #fe302f;
-    padding: 2px 8px;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-}
-
-.section-products .single-product .part-1 .new {
-    left: 0;
-    background-color: #444444;
-}
-
-.section-products .single-product .part-1 ul {
-    position: absolute;
-    bottom: -41px;
-    left: 20px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    opacity: 0;
-    transition: bottom 0.5s, opacity 0.5s;
-}
-
-.section-products .single-product:hover .part-1 ul {
-    bottom: 30px;
-    opacity: 1;
-}
-
-.section-products .single-product .part-1 ul li {
-    display: inline-block;
-    margin-right: 4px;
-}
-
-.section-products .single-product .part-1 ul li a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    background-color: #ffffff;
-    color: #444444;
-    text-align: center;
-    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
-    transition: color 0.2s;
-}
-
-.section-products .single-product .part-1 ul li a:hover {
-    color: #fe302f;
-}
-
-.section-products .single-product .part-2 .product-title {
-    font-size: 1rem;
-}
-
-.section-products .single-product .part-2 h4 {
-    display: inline-block;
-    font-size: 1rem;
-}
-
-.section-products .single-product .part-2 .product-old-price {
-    position: relative;
-    padding: 0 7px;
-    margin-right: 2px;
-    opacity: 0.6;
-}
-
-.section-products .single-product .part-2 .product-old-price::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #444444;
-    transform: translateY(-50%);
-}
+/* .card {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding-bottom: 10px;
+} */
 </style>
