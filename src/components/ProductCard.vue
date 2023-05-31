@@ -1,16 +1,13 @@
 <template>
-   <div
+  <div
     class="container-fluid bg-trasparent my-4 p-3"
-    style="position: relative">
+    style="position: relative"
+  >
     <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
       <div class="col hp">
-        <div class="card h-100 shadow-sm" > 
+        <div class="card h-100 shadow-sm">
           <a href="#">
-            <img
-              :src="product.img"
-              class="card-img-top"
-              alt="product.title"
-            />
+            <img :src="product.img" class="card-img-top" alt="product.title" />
           </a>
 
           <div class="label-top shadow-sm">
@@ -23,8 +20,13 @@
               >
 
               <span class="float-end"
-                ><a href="#" class="small text-muted text-uppercase aff-link btn"
-                  ><router-link :to="{name: 'product', params: {id: product.id}}">view product</router-link></a
+                ><a
+                  href="#"
+                  class="small text-muted text-uppercase aff-link btn"
+                  ><router-link
+                    :to="{ name: 'product', params: { id: product.id } }"
+                    >view product</router-link
+                  ></a
                 ></span
               >
             </div>
@@ -35,7 +37,7 @@
             </h5> -->
             <h5 class="card-title">
               <a target="_blank" href="#">
-                {{product.category}}
+                {{ product.category }}
               </a>
             </h5>
 
@@ -60,7 +62,7 @@
 
 <script>
 export default {
-props: ["product"]
+  props: ["product"],
 };
 </script>
 

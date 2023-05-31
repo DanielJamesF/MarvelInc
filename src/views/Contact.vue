@@ -1,6 +1,6 @@
 <template>
   <div class="container text-white">
-   <div class="col-md-12 py-5">
+    <div class="col-md-12 py-5">
       <div class="site-heading text-center">
         <h2>Contact<span> Us</span></h2>
         <h4></h4>
@@ -10,10 +10,10 @@
       <div class="col-md-6 col-xm-12">
         <img src="https://i.postimg.cc/T2j1k3Gk/logo.png" alt="logo" />
         <div class="my-3 social-icons">
-          <a href=""><i class="bi bi-instagram text-danger mx-1 "></i></a>
-          <a href=""><i class="bi bi-facebook text-primary mx-1 "></i></a>
-          <a href=""><i class="bi bi-tiktok text-dark mx-1 "></i></a>
-          <a href=""><i class="bi bi-twitter text-primary2 mx-1 "></i></a>
+          <a href=""><i class="bi bi-instagram text-danger mx-1"></i></a>
+          <a href=""><i class="bi bi-facebook text-primary mx-1"></i></a>
+          <a href=""><i class="bi bi-tiktok text-dark mx-1"></i></a>
+          <a href=""><i class="bi bi-twitter text-primary2 mx-1"></i></a>
         </div>
       </div>
       <div class="col-md-5 col-xl-5 col-xm-12">
@@ -66,7 +66,7 @@ export default {};
 <style>
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   box-sizing: border-box;
 }
 body {
@@ -86,7 +86,6 @@ body {
 }
 
 body {
-
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
 }
@@ -122,7 +121,7 @@ form label {
 
 form button {
   background-color: #000000;
-  color: rgb(255, 255, 255) ;
+  color: rgb(255, 255, 255);
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -131,8 +130,6 @@ form button {
   margin: 0.5rem 0rem;
   border-radius: 10px;
 }
- 
-
 
 form button:hover {
   background-color: #ffffff;
@@ -147,14 +144,15 @@ form button:hover {
 
 .text {
   margin-left: 1rem;
-}.site-heading h2 {
+}
+.site-heading h2 {
   display: block;
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 .site-heading h2 span {
-  color: #A00000;
+  color: #a00000;
 }
 .site-heading h4 {
   display: inline-block;
@@ -164,7 +162,7 @@ form button:hover {
   z-index: 1;
 }
 .site-heading h4::before {
-  background: #A00000 none repeat scroll 0 0;
+  background: #a00000 none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 2px;
@@ -173,12 +171,4 @@ form button:hover {
   position: absolute;
   width: 50px;
 }
-
-
-
-
-
-
-
-
 </style>

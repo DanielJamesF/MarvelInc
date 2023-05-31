@@ -1,9 +1,7 @@
 <template>
   <div class="container-fluid text-white login">
     <div class="row">
-      <div class="col-md-5 col-xm-12">
-
-      </div>
+      <div class="col-md-5 col-xm-12"></div>
       <div class="col-md-7 col-xl-5 col-xm-12">
         <form @submit.prevent="login">
           <div class="site-heading text-center my-5">
@@ -94,7 +92,7 @@ body {
   color: rgb(255, 255, 255);
 }
 .login {
-  background:url(https://wallpapercave.com/wp/wp4689816.jpg);
+  background: url(https://wallpapercave.com/wp/wp4689816.jpg);
   width: 100vw;
   height: 100vh;
 }

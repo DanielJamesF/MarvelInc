@@ -1,15 +1,16 @@
 <template>
-    <div v-if="product">
-        <ProductCard 
-        v-for="product in products" 
-        :key="product.id" 
-        :product="product"/>
-        <div :to="{name: 'product', params: {id:product.id}}">
-            <img :src="product.img" :alt="product.title">
-            <h2>{{ product.title }}</h2>
-        </div>
-         </div>
-       <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div v-if="product">
+    <ProductCard
+      v-for="product in products"
+      :key="product.id"
+      :product="product"
+    />
+    <div :to="{ name: 'product', params: { id: product.id } }">
+      <img :src="product.img" :alt="product.title" />
+      <h2>{{ product.title }}</h2>
+    </div>
+  </div>
+  <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img :src="products.img1" class="d-block w-100" :alt="product.title">
@@ -22,10 +23,10 @@
           </div>
         </div>
       </div> -->
-    <div v-else>Loading...</div>
+  <div v-else>Loading...</div>
 </template>
 
-<script> 
+<script>
 import ProductCard from "../components/ProductCard.vue";
 
 export default {
@@ -34,14 +35,12 @@ export default {
   },
   computed: {
     products() {
-      return this.$store.state.product
+      return this.$store.state.product;
     },
   },
-  components: {ProductCard},
-  props: ["id"]
-}
+  components: { ProductCard },
+  props: ["id"],
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

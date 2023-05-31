@@ -1,8 +1,7 @@
 <template>
   <div class="container-fluid text-white register">
     <div class="row">
-      <div class="col-md-6 col-xm-12">
-      </div>
+      <div class="col-md-6 col-xm-12"></div>
       <div class="col-md-5 col-xl-5 col-xm-12">
         <form>
           <div class="site-heading text-center my-5">
@@ -110,7 +109,7 @@ body {
   color: aqua;
 }
 .register {
-    background:url(https://wallpapercave.com/wp/wp4689852.png);
+  background: url(https://wallpapercave.com/wp/wp4689852.png);
   width: 100vw;
   height: 100vh;
 }

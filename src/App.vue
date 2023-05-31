@@ -1,20 +1,20 @@
 <template>
   <Navbar />
   <Navbar />
-  <router-view/>
-  <footer-all/>
+  <router-view />
+  <footer-all />
 </template>
 <script>
-import FooterAll from '@/components/FooterAll.vue';
-import Navbar from './components/Navbar.vue'
+import FooterAll from "@/components/FooterAll.vue";
+import Navbar from "./components/Navbar.vue";
 
 export default {
   name: "myApp", // Renaming the app so it won't conflict with the child component
   components: {
     FooterAll,
-    Navbar
-}
-}
+    Navbar,
+  },
+};
 </script>
 <style>
 #app {
@@ -24,5 +24,4 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
 </style>
